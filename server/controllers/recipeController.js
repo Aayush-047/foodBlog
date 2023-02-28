@@ -463,48 +463,30 @@ exports.contact=async(req,res) => {
 async function insertDymmyCategoryData(){
     try {
       await Category.insertMany(
-        [{
-          "_id": {
-            "$oid": "614dd75a9693912a00f0514d"
-          },
+        [
+        {
           "name": "American",
-          "image": "american-food.jpg",
-          "__v": 0
-        },{
-          "_id": {
-            "$oid": "614dd75a9693912a00f0514e"
-          },
+          "image": "american-food.jpg"
+        },
+        {
           "name": "Chinese",
-          "image": "chinese-food.jpg",
-          "__v": 0
-        },{
-          "_id": {
-            "$oid": "614dd75a9693912a00f0514c"
-          },
+          "image": "chinese-food.jpg"
+        },
+        {
           "name": "Thai",
-          "image": "thai-food.jpg",
-          "__v": 0
-        },{
-          "_id": {
-            "$oid": "614dd75a9693912a00f0514f"
-          },
+          "image": "thai-food.jpg"
+        },
+        {
           "name": "Mexican",
-          "image": "mexican-food.jpg",
-          "__v": 0
-        },{
-          "_id": {
-            "$oid": "614dd75a9693912a00f05150"
-          },
+          "image": "mexican-food.jpg"
+        },
+        {
           "name": "Indian",
-          "image": "indian-food.jpg",
-          "__v": 0
-        },{
-          "_id": {
-            "$oid": "614dd75a9693912a00f05151"
-          },
+          "image": "indian-food.jpg"
+        },
+        {
           "name": "Spanish",
-          "image": "spanish-food.jpg",
-          "__v": 0
+          "image": "spanish-food.jpg"
         }]
       );
     }catch (error) {
